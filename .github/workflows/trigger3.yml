@@ -3,8 +3,8 @@ on:
   #a completer
   pull_request:
     paths:
-    - '*.yml'
-    - '!test/*.yml'
+    - '**.yml'
+    - '!**/test/**.yml'
     
 jobs:
   stale:
