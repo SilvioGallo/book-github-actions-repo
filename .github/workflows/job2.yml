@@ -15,7 +15,7 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     needs: job1
-    if: faillure()
+    if: failure()
     steps:
       - run: echo "quelque chose s'est mal passé"
   job3:
