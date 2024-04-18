@@ -2,7 +2,7 @@ name: "Triggers - exercice1"
 on:
   #a completer
   schedule:
-  - cron: '0 30 19 ? * 1-5 *'
+    - cron: '30 19 * * 1-5'
 jobs:
   stale:
     runs-on: ubuntu-latest
