@@ -1,0 +1,13 @@
+name: dual jobs
+on:
+  workflow_dispatch:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello job2" > test.txt
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - run: cat test.txt
